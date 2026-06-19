@@ -1,0 +1,43 @@
+overrides:
+  # picomatch - ReDoS (GHSA-3v7f-55p6-f55p / GHSA-c2c7-rcm5-vvqj)
+  'anymatch>picomatch': 2.3.2
+  'micromatch>picomatch': 2.3.2
+  'fdir>picomatch': 4.0.4
+  'tinyglobby>picomatch': 4.0.4
+  'jest-haste-map>picomatch': 4.0.4
+  'jest-message-util>picomatch': 4.0.4
+  'jest-util>picomatch': 4.0.4
+  # brace-expansion - ReDoS (GHSA-f886-m6hf-6m8v)
+  'minimatch@3>brace-expansion': 1.1.13
+  'minimatch@9>brace-expansion': 2.0.3
+  # minimatch - ReDoS (GHSA-52p9-v...)
+  '@eslint/config-array>minimatch': 3.1.4
+  '@eslint/eslintrc>minimatch': 3.1.4
+  'eslint>minimatch': 3.1.4
+  'eslint-plugin-import>minimatch': 3.1.4
+  'eslint-plugin-jsx-a11y>minimatch': 3.1.4
+  'eslint-plugin-react>minimatch': 3.1.4
+  'glob@7>minimatch': 3.1.4
+  'glob@10>minimatch': 9.0.7
+  # flatted - DoS / prototype pollution (GHSA-...)
+  'flat-cache>flatted': 3.4.2
+  # ajv - ReDoS (GHSA-...)
+  '@eslint/eslintrc>ajv': 6.15.0
+  'eslint>ajv': 6.15.0
+  # js-yaml - prototype pollution
+  '@istanbuljs/load-nyc-config>js-yaml': 3.14.2
+  'eslint>js-yaml': 4.1.1
+  '@eslint/eslintrc>js-yaml': 4.1.1
+  # diff - DoS (GHSA-73rr-hh4g-fpgx)
+  'ts-node>diff': 4.0.4
+  # postcss - XSS (GHSA-qx2v-qp2m-jg93)
+  'next>postcss': 8.5.15
+  # ws - memory disclosure (GHSA-58qx-3vcg-4xpx)
+  'jsdom>ws': 8.20.1
+  # @tootallnate/once - control flow (GHSA-vpq2-c234-7xj6)
+  '@tootallnate/once': 2.0.1
+
+allowBuilds:
+  '@tailwindcss/oxide': true
+  sharp: true
+  unrs-resolver: true
